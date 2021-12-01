@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Добро пожаловать в приложение Koshumcha").font(.title).padding().multilineTextAlignment(.center)
+           
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .previewDisplayName("display-01")
+                .environment(\.sizeCategory, .medium)
+                .statusBar(hidden: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                .previewInterfaceOrientation(.portrait)
+            .statusBar(hidden: /*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
+        }
     }
 }
