@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="cq9-Fu-afq">
+                                <rect key="frame" x="19" y="95" width="386" height="316"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Вы сможете посмотреть приход и  расход денег по праздникам или за  период" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uGz-zb-aHC">
+                                <rect key="frame" x="22" y="568" width="374" height="109"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Воспользуйтесь удобной  аналитикой" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckK-rT-63G">
+                                <rect key="frame" x="44" y="461" width="321" height="97"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="U2T-dV-kdc">
+                                <rect key="frame" x="136" y="838" width="156" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.1843137255" green="0.75294117650000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKw-ge-hRg">
+                                <rect key="frame" x="74" y="737" width="266" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Начать ">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.91764705882352937" green="0.96470588235294119" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="29"/>
+                                    <color key="baseForegroundColor" red="0.1843137255" green="0.75294117650000003" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uGz-zb-aHC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="EWI-34-nWr"/>
+                            <constraint firstItem="ckK-rT-63G" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="NjS-S8-315"/>
+                            <constraint firstItem="uGz-zb-aHC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="XjB-K8-rrv"/>
+                            <constraint firstItem="ckK-rT-63G" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cfj-sW-He0"/>
+                            <constraint firstItem="uGz-zb-aHC" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="80" id="gdt-RT-2vz"/>
+                            <constraint firstItem="cq9-Fu-afq" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hn7-Gy-MHg"/>
+                            <constraint firstItem="uGz-zb-aHC" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="nBN-Ok-xYW"/>
+                            <constraint firstItem="cq9-Fu-afq" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="oWE-vU-eb7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group" width="386" height="316"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
